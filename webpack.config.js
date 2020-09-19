@@ -26,6 +26,7 @@ module.exports = {
       '@': path.resolve(__dirname, 'src')
     }
   },
+  devtool: isDev ? 'source-map' : false,
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
