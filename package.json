@@ -1,12 +1,18 @@
 {
   "name": "webpack-starter-kit",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Basic Webpack setup for any project",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Froncast/webpack-starter-kit.git"
+  },
+  "keywords": ["webpack", "webpack-starter-kit", "js", "javascript"],
+  "author": "Oleg Tretyakov <ichimaru859@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Froncast/webpack-starter-kit/issues"
+  }
 }
