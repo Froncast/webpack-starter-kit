@@ -3,16 +3,26 @@
   "version": "1.0.0",
   "description": "Basic Webpack setup for any project",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "webpack",
+    "build": "webpack --mode=production"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Froncast/webpack-starter-kit.git"
   },
-  "keywords": ["webpack", "webpack-starter-kit", "js", "javascript"],
+  "keywords": [
+    "webpack",
+    "webpack-starter-kit",
+    "js",
+    "javascript"
+  ],
   "author": "Oleg Tretyakov <ichimaru859@gmail.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Froncast/webpack-starter-kit/issues"
+  },
+  "devDependencies": {
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12"
   }
 }
