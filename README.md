@@ -2,7 +2,7 @@
 
 Create a copy of the (remote) repository
 ```
-https://github.com/Froncast/webpack-starter-kit.git
+git clone https://github.com/Froncast/webpack-starter-kit.git
 ```
 
 Rename the build folder to the name of your project.
