@@ -15,7 +15,7 @@ const filename = ext => isDev ? `bundle.[hash].${ext}` : `bundle.${ext}`
 module.exports = {
   context: path.resolve(__dirname, 'src'),
   mode: 'development',
-  entry: './index.js',
+  entry: ['@babel/polyfill','./index.js'],
   output: {
     filename: filename('js'),
     path: path.resolve(__dirname, 'dist')
