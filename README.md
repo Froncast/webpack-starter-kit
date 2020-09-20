@@ -1,4 +1,4 @@
-# preparation
+# Preparation
 
 Create a copy of the (remote) repository
 ```
@@ -33,7 +33,7 @@ Run command
 npm start
 ```
 
-Во вкладке браузера перейти по адресу http://localhost:9000
+In the browser tab, go to http://localhost:9000
 
 ## Building
 
