@@ -60,6 +60,14 @@ module.exports = {
           from: path.resolve(__dirname, 'src/favicon.ico'),
           to: path.resolve(__dirname, 'dist'),
         },
+        {
+          from: path.resolve(__dirname, 'src/img'),
+          to: path.resolve(__dirname, 'dist/img'),
+        },
+        {
+          from: path.resolve(__dirname, 'src/fonts'),
+          to: path.resolve(__dirname, 'dist/fonts'),
+        }
       ],
     }),
     new MiniCssExtractPlugin({
@@ -83,14 +91,12 @@ module.exports = {
         ],
       },
       {
-        test: /\.(png|jpe?g|gif)$/i,
+        test: /\.(png|svg|jpg|gif)$/,
         use: [
           {
             loader: 'file-loader',
             options: {
               name: '[name].[ext]',
-              outputPath: './img',
-              useRelativePath: true,
             },
           },
           {
@@ -114,6 +120,17 @@ module.exports = {
               },
             },
           },
+        ],
+      },
+      {
+        test: /\.(woff|woff2|eot|ttf|otf)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+            },
+          }
         ],
       },
       {
